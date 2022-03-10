@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Самостоятельная работа №5</title>
+	<style>
+		html, body {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background-color: rgb(242, 244, 211);
+		}
+		header, footer {
+			height: 100px;
+			background-color: rgb(138, 198, 45);
+			position: relative;
+		}
+		header {
+			margin-bottom: -100px;
+			z-index: 2;
+		} 
+		.headerContent {
+			width: 1024px;
+			margin: 0 auto;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		main {
+			height: 100%;
+    		min-height: 250px;
+		    margin: 0 auto;
+		    background-color: rgb(242, 244, 211);
+		    padding-bottom: 100px;
+		    padding-top: 100px;
+		    z-index: 0;
+    		position: relative;
+		}
+		.mainContent {
+			width: 1024px;
+    		height: 100%;
+    		margin: 0 auto 0px auto;
+    		background-color: #fff;
+		}
+		.mainContent:after {
+			clear: both;
+			display: table;
+			content: " ";
+		}
+		nav {
+			width: 20%;
+			height: 100%;
+			background-color: rgb(242, 244, 211);
+			float: left;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		.sidebar {
+			width: 18%;
+			height: 100%;
+			background-color: rgb(242, 244, 211);
+			float: right;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		article {
+			float: left;
+			width: 56%;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		footer {
+			height: 100px;
+			padding-top: 20px;
+			padding-left: 20px;
+			position: relative;
+			margin-top: -100px;
+			width: 100%;
+		}
+		.footerContent {
+			margin: 0 auto;
+			width: 1024px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="headerContent">
+			Шапка
+		</div>
+	</header>
+	<main>
+		<div class="mainContent">
+			<nav class="navigation">
+				Навигация
+			</nav>
+			<article>
+				Статья
+			</article>
+			<aside class="sidebar">
+				Боковая панель
+			</aside>
+		</div>
+	</main>
+	<footer>
+		<div class="footerContent">
+			Подвал
+		</div>
+	</footer>
+</body>
+</html>

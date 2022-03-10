@@ -1,0 +1,82 @@
+body {
+     background-color: #cecece;  
+     padding: 32px;
+     /* цвет фона */
+     /* внутренний отступ  */
+}
+
+button {
+     margin: 25px 15px;
+     border: none;
+     border-radius: 5px;
+     border: 1px solid lime;
+     padding: 15px 35px;
+     /* внешний отступ*/
+     /* граница */
+     /* закругленная граница */
+}
+
+button:hover {
+     outline: 1px solid white;
+     outline-offset: -2px;
+     cursor: pointer;
+     /* при наведении: */
+     /* обводка не влияющая на ширину элемента */
+     /* расстояние между рамкой и обводкой */
+
+}
+
+.button1 {
+     background-image: linear-gradient(#76B9CC, #97cc76);
+     /* линейный градиент фона элемента */
+}
+
+.button2 {
+     background-image: linear-gradient(#76B9CC, #CC208A, #97cc76);
+     /* линейный градиент фона элемента */
+}
+
+.button3 {
+     background-image: linear-gradient(#76B9CC, #CC208A, #97cc76, #B34EE9);
+     /* линейный градиент фона элемента */
+}
+
+.button4 {
+     background-image: linear-gradient(blue 5%, lime 30%, #97cc76 80%, #B34EE9 90%);
+     /* линейный градиент фона элемента */
+
+}
+
+.button5 {
+     background-image: linear-gradient(blue 5px, lime 15px, white 30px, black 50px);
+     /* линейный градиент фона элемента */
+}
+
+.button6 {
+     background-image: linear-gradient(25deg, blue, lime);
+     /* линейный градиент фона элемента */
+}
+
+.button7 {
+     background-image: radial-gradient(red 0%, yellow 30%);
+     /* радиальный градиент фона элемента */
+}
+
+.button8 {
+     background-image: radial-gradient(at top right, red, yellow);
+     /* радиальный градиент фона элемента */
+}
+
+.button9 {
+     background-image: radial-gradient(farthest-corner at 25% 50%, #f35 0%, #43e 100%);
+     /* радиальный градиент фона элемента 
+     градиент распространяется до дальней стороны блока*/
+}
+
+.button10 {
+     background-image: radial-gradient(15px 15px at 85% 25%, #f35 0%, #43e 100%);
+     /* радиальный градиент фона элемента */
+}
+
+
+

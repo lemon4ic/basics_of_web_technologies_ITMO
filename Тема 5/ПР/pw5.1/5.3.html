@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Резиновый двухколоночный макет</title>
+	<style>
+		body,html {
+			padding: 0;
+			margin: 0;
+			background-color: teal;
+		}
+		.container {
+			width: 100%;
+			margin: 0 auto;
+			 background-color: #ccc;
+			 min-width: 650px;
+		}
+		header > h1 {
+			margin: 0;
+			padding: 15px 0;
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 1px solid #fefefe;
+		}
+		header > nav > ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			border-bottom: 1px solid #fefefe;
+		}  
+		header > nav > ul > li {
+			display: inline-block;
+			padding: 15px 30px;
+			border-left: 1px solid #fefefe;
+		}
+		header > nav > ul > li:last-child {
+			border-right: 1px solid #fefefe;
+		}
+		header > nav > ul > li > a {
+			text-decoration: none;
+			color: black;
+		}
+		header > nav > ul > li > a:hover {
+			text-decoration: underline;
+			color: blue;
+		}
+		aside {
+			width: 15%;
+			float: left;
+		}
+		aside ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 15px;
+		}
+		aside ul > li > a {
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+		}
+		aside ul >li > a:hover {
+			text-decoration: underline;
+			color: blue;
+			font-size: 18px;
+		}
+		article {
+			margin-left: 15%;
+			border-left: 1px solid #fefefe;
+			counter-reset: list 0;
+			padding-bottom: 15px;
+		}
+		section {
+			margin-bottom: 72px;
+			padding-left: 15px;
+			padding-right: 30px;
+		}
+		section:first-child > h3 {
+			margin-top: 0;
+			padding-top: 30px;
+		}
+		section > h3 > span:before {
+			counter-increment: list;
+			content: "Статья " counter(list) ": ";
+		}
+		section a {
+			text-align: center;
+			float: right;
+			display: inline-block;
+			background-color: red;
+			padding: 10px 18px;
+			color: #fff;
+			text-decoration: none;
+		}
+		footer {
+			border: 1px solid #fefefe;
+			text-align: center;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Шапка сайта</h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Фото</a></li>
+					<li><a href="#">Видео</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<aside>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Фото</a></li>
+					<li><a href="#">Видео</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</aside>
+			<article>
+				<section>
+					<h3><span class="couter">Наша статья</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, architecto. Amet, odio, hic? Adipisci quaerat incidunt in voluptatem omnis! Minus eius ipsa voluptatem dolorum blanditiis laborum! Veniam dolorum modi, minima at corrupti pariatur qui error, voluptas ullam cupiditate quidem sunt quisquam illo molestiae autem dicta id. Id, in. Numquam dolore quasi non nihil necessitatibus distinctio excepturi provident facere pariatur similique in voluptatum corporis maxime commodi fugit quidem, eligendi nobis iusto aperiam ullam dolorem. Laborum enim aspernatur incidunt consequatur officiis inventore, fugiat, tenetur qui non, totam dolores ea necessitatibus nihil natus sapiente quas error cumque accusamus est? Ea repudiandae ex praesentium?</p>
+				<a href="#">Подробнее</a>
+				</section>
+				<section>
+					<h3><span class="couter">Наша статья</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, architecto. Amet, odio, hic? Adipisci quaerat incidunt in voluptatem omnis! Minus eius ipsa voluptatem dolorum blanditiis laborum! Veniam dolorum modi, minima at corrupti pariatur qui error, voluptas ullam cupiditate quidem sunt quisquam illo molestiae autem dicta id. Id, in. Numquam dolore quasi non nihil necessitatibus distinctio excepturi provident facere pariatur similique in voluptatum corporis maxime commodi fugit quidem, eligendi nobis iusto aperiam ullam dolorem. Laborum enim aspernatur incidunt consequatur officiis inventore, fugiat, tenetur qui non, totam dolores ea necessitatibus nihil natus sapiente quas error cumque accusamus est? Ea repudiandae ex praesentium?</p>
+				<a href="#">Подробнее</a>
+				</section>
+				<section>
+					<h3><span class="couter">Наша статья</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, architecto. Amet, odio, hic? Adipisci quaerat incidunt in voluptatem omnis! Minus eius ipsa voluptatem dolorum blanditiis laborum! Veniam dolorum modi, minima at corrupti pariatur qui error, voluptas ullam cupiditate quidem sunt quisquam illo molestiae autem dicta id. Id, in. Numquam dolore quasi non nihil necessitatibus distinctio excepturi provident facere pariatur similique in voluptatum corporis maxime commodi fugit quidem, eligendi nobis iusto aperiam ullam dolorem. Laborum enim aspernatur incidunt consequatur officiis inventore, fugiat, tenetur qui non, totam dolores ea necessitatibus nihil natus sapiente quas error cumque accusamus est? Ea repudiandae ex praesentium?</p>
+				<a href="#">Подробнее</a>
+				</section>
+				<section>
+					<h3><span class="couter">Наша статья</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, architecto. Amet, odio, hic? Adipisci quaerat incidunt in voluptatem omnis! Minus eius ipsa voluptatem dolorum blanditiis laborum! Veniam dolorum modi, minima at corrupti pariatur qui error, voluptas ullam cupiditate quidem sunt quisquam illo molestiae autem dicta id. Id, in. Numquam dolore quasi non nihil necessitatibus distinctio excepturi provident facere pariatur similique in voluptatum corporis maxime commodi fugit quidem, eligendi nobis iusto aperiam ullam dolorem. Laborum enim aspernatur incidunt consequatur officiis inventore, fugiat, tenetur qui non, totam dolores ea necessitatibus nihil natus sapiente quas error cumque accusamus est? Ea repudiandae ex praesentium?</p>
+				<a href="#">Подробнее</a>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<p>Copyright@Кибирев Леонид 2021 год</p>
+		</footer>
+	</div>
+</body>
+</html>

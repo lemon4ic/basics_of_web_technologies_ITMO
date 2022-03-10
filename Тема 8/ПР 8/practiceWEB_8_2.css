@@ -1,0 +1,60 @@
+ body {
+    background-color: #cecece;
+    padding: 32px;
+    /* цвет фона */
+    /* внутренний отступ */
+}
+
+button {
+    margin: 25px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lime;
+    padding: 15px 35px;
+    /* внешний отступ */
+    /* рамка убрана */
+    /* закругленная рамка */
+    /* рамка */
+    /* внутренний отступ */
+
+}
+
+button:hover {
+    outline: 1px solid white;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+/*при наведении: */
+/* обводка */
+/* отступ обводки */
+/* курсор палец */
+
+.button1 {
+    background-color: #2563E9;
+    transition: 1s;
+    /* цвет фона */
+    /* продолжительность опрерации */
+}
+
+.button1:hover {
+    background-color: #4478E9;
+    /*при наведении: */
+    /* цвет фона */
+}
+
+.button2 {
+    background-color: #2563E9;
+    transition: 1s;
+    transition-property: background;
+    /* цвет фона */
+    /* продолжительность фона */
+}
+
+.button2:hover {
+    background-color: #E95AD1;
+    outline: none;
+    /* при наведении: */
+    /*цвет фона */
+    /* убрана обводка */
+}
+

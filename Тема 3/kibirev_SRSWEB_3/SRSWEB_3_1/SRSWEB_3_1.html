@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body bgcolor="gray">
+	<h1 align="center"><font size="7">Заявка на оформление банковских продуктов</font></h1>
+	<form action="#" name="application">
+
+		<p align="center"><font size="6" color="blue">Заполните поля ваших персональных данных</font></p>
+		<input type="text"> Введите имя <br>
+		<input type="text"> Введите фамилию <br>
+		<input type="text"> Введите отчество <br>
+		<input type="text"> Введите email <br>
+		<input type="password"> <font color="green">Придумайте пароль от личного кабинета</font> <br>
+		<input type="password">  <font color="green">Повторите пароль</font> <br>
+		<input type="text"> Номер телефона <br>
+		<input type="text"> Серия и номер паспорта <br> <br>
+		Загрузите скан 2 и 3 страницы паспорта<br> <input type="file">  <br> <br>
+		Загрузите страницу паспорта о регистрации <br> <input type="file"> <br> <br> <hr> <br>
+
+		<p align="center"><font color="blue" size="6">Заполните информацию по нашим продуктам</font></p>
+
+
+		<fieldset>
+			<legend>Выберете дополнительные подключаемые функции</legend>
+				<input type="checkbox"> Овердрафт <br>
+				<input type="checkbox"> Копилка <br>
+				<input type="checkbox"> SMS информирование <br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Выберете дополнительный кэшбек на выбранные категории</legend>
+				<input type="checkbox"> Продуктовые магазины <br>
+				<input type="checkbox"> Книги <br>
+				<input type="checkbox"> Здоровье <br>
+		</fieldset>
+
+
+		<br>
+
+		<fieldset>
+			<legend>Выберете дополнительные валютные счета</legend>
+				<input type="checkbox"> Евро <br>
+				<input type="checkbox"> Доллары США <br>
+				<input type="checkbox"> Юани <br>
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<legend>Выберете дебетовую карту карту</legend>
+				Black <input type="radio"> <br>
+				Junior <input type="radio"> <br>
+				Multi <input type="radio"> <br>		
+		</fieldset>
+
+		<fieldset>
+			<legend> Выберете кредитную карту </legend>
+				Silver <input type="radio">
+				Gold <input type="radio">
+				Platium <input type="radio">
+		</fieldset>
+
+		<fieldset>
+			<legend> Выберете платежную систему</legend>
+				Visa <input type="radio">
+				MasterCard <input type="radio">
+				МИР <input type="radio">
+		</fieldset> <br> <br>
+		
+		Настройте максимальный лимит овердрафта
+		<select name="over" id="">е
+			<option>от 0р до 1000р</option>
+			<option>от 1001р до 5000р</option>
+			<option>от 5001р до 1000р</option>
+		</select><br>
+
+		Выберете доступный лимит по кредитной карте 
+			<option>от 20000р до 50000р</option>
+		<select name="kredit" id=""> 
+			<option>от 50000р до 100000р</option>
+			<option>от 100000 до 500000</option>
+		</select><br> <br> <br> <hr> <br>
+
+		<p align="center"><font size="6" color="blue">Укажите данные по доставке</font></p> <br>
+
+		Напишите адрес доставки наших продуктов курьером <br>
+		<textarea name="place" id="place" cols="30" rows="10" placeholder="Область, город, улица, дом, кв"></textarea> <br>
+		Оставте дополнительную информацию курьеру для доставки <br>
+		<textarea name="info_сourier" id="info" cols="30" rows="10" placeholder="По прибытии позвоните на телефон, мой подезд открывается по коду 2321..."></textarea> <br> <br>
+
+		Выберите оптимальное время доставки 
+		<select name="time" id="">  
+			<option>с 10.00 до 12.00</option>
+			<option> c 14.00 до 16.00</option>
+			<option>c 16.00 до 18.00</option>
+		</select> <br>
+		
+		<button type="submith">Отправить</button>
+		<button type="reset">Сброс</button>
+	</form>
+</body>
+</html>
